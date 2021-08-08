@@ -1,0 +1,4 @@
+[{
+  "caption": "Converts tab indented text into latex itemize",
+  "command": "indent_itemize"
+}]

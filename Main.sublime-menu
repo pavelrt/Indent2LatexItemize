@@ -1,0 +1,12 @@
+[
+    {
+        "id": "edit",
+        "children":
+        [
+            {
+                "caption": "Paste and Itemize (LaTex)",
+                "command": "indent_itemize"
+            },
+        ]
+    }
+]
