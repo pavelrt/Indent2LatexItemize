@@ -28,7 +28,9 @@ class IndentItemizeCommand(sublime_plugin.TextCommand):
 				result.append('\t' * (level - 1) + '\\begin{itemize}')
 				result.append('\t' * level + '\\item ' + line_no_tabs)
 			elif level > number_of_tabs:
-				result.append('\t' * number_of_tabs + '\\end{itemize}')
+				while level > number_of_tabs:
+					result.append('\t' * number_of_tabs + '\\end{itemize}')
+					level = level - 1
 				result.append('\t' * number_of_tabs + '\\item ' + line_no_tabs)
 		while level > 0:
 			level = level - 1
